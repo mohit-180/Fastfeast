@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fastfeast.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.jpg" alt="MyOnlineMeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Fast Feast. </h1>
+        <p>Fastest delivery of food from your. </p>
+        <p>Favourate restaurent to your doorstep. </p>
+        <button class="btn" onclick="openNewPage()">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+        <script>
+            function openNewPage() {
+                window.open("order.html", "_self");
+            }
+        </script>
+           <div class="box" onclick="redirectTo('order.html')">
+            <img src="img/1.png" alt="">
+            <h2 class="h-secondary center">Food Catering</h2>
+            <p class="center">Offering a wide variety of cuisines and dishes, our catering services provide the perfect solution for all your events.
+                 Our professional staff ensures timely and efficient service, making your function a memorable experience. 
+                 Explore our catering options and book your event today!</p>
+        </div>
+        <div class="box" onclick="redirectTo('order.html')">
+            <img src="img/2.jpg" alt="">
+            <h2 class="h-secondary center">Food Delivery</h2>
+            <p class="center">Enjoy the convenience of ordering your favorite dishes from the comfort of your home or office. With our food delivery service, you can easily access a wide range of dishes from our restaurant partners. No more waiting in line, our efficient drivers deliver your food to your doorstep. Place your order now and enjoy a delightful dining experience!</p>
+        </div>
+        <div class="box" onclick="redirectTo('order.html')">
+            <img src="img/3.png" alt="">
+            <h2 class="h-secondary center">Bulk Ordering</h2>
+            <p class="center">Upgrade your procurement game with our bulk ordering services. Our cost-effective bulk purchasing options help you save on operational costs while maintaining a steady supply of high-quality ingredients. Explore our bulk ordering options and get started on maximizing your restaurant's efficiency and growth today!</p>
+        </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/logo1.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/logo2.png" alt="Our Client">
+            </div>
+          
+            <div class="client-item">
+                <img src="img/logo4.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/logo3.png" alt="Our Client">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Submit" onclick="submitForm()">
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="center">
+            Copyright &copy; www.fastfeast.com. All rights reserved! Made By Mohit And Priyani!
+        </div>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

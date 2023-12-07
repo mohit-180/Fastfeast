@@ -1,0 +1,63 @@
+body {
+    background-image: url('../img/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.order-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    transition: transform 0.6s, box-shadow 0.6s;
+}
+.food-container :hover{
+    background: goldenrod;
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.food-item {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.food-item :hover{
+    cursor: pointer;
+}
+.food-item img {
+    width: 100%;
+    height: auto;
+}
+.place-order-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.place-order-btn {
+    background-color: #ff5733;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.place-order-btn:hover {
+    background-color: #ff3300;
+}
+
